@@ -31,7 +31,7 @@ function TripGroup(){
 };
 
 function AddMember(member) {
-      //console.log(Object.keys(nagendra));
+    
       let members = Object.keys(nagendra);
       if(members.includes(member)){
           console.log("Member already present");

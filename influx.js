@@ -1,20 +1,4 @@
-// function Trip_group(member ){
 
-//     var  nagendra = {
-         
-//      }
-      
-//      nagendra[`${member}`] = { expenses : [] };
-//      console.log(nagendra);
-// }
-
-// Trip_group("Rahul");
-
-// function add_member ( members ){
-    
-    
-
-// }
 var nagendra;
 let groupOnce = false;
 
@@ -90,7 +74,7 @@ function split( ){
         console.log(members[i] + " owes " + (Members_expenses[i]));
     }
    }
-  // console.log( Members_expenses );
+  
 
 }
 

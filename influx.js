@@ -67,6 +67,7 @@ function AddExpenses(member, expense){
 function split( ){
     let members = Object.keys(nagendra);
     let mean_expense = 0;
+    let more_expense_person = "";
   var Members_expenses =  members.map( (each) => { 
        mean_expense +=  nagendra[each].total;
        return nagendra[each].total;
@@ -75,8 +76,18 @@ function split( ){
     mean_expense = mean_expense / members.length;
    for(let i = 0; i < Members_expenses.length; i++){
     Members_expenses[i] -= mean_expense;
+    if(Members_expenses[i] > 0){
+        more_expense_person = members[i];
+    } 
+    
+   };
+
+   for(let i = 0; i < Members_expenses.length; i++ ){
     if(Members_expenses[i] < 0){
-        console.log(members[i] + " owes " + (-Members_expenses[i]))
+        console.log(members[i] + " owes " +more_expense_person +" "+ (-Members_expenses[i]));
+
+    }else if(Members_expenses[i] == 0){
+        console.log(members[i] + " owes " + (Members_expenses[i]));
     }
    }
   // console.log( Members_expenses );

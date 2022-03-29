@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82fa8c0f379960c649372e8039c146c87abdd37c
 var nagendra;
 let groupOnce = false;
 
@@ -27,6 +31,7 @@ function TripGroup() {
 }
 
 function AddMember(member) {
+<<<<<<< HEAD
   let members = Object.keys(nagendra);
   if (members.includes(member)) {
     console.log("Member already present");
@@ -34,6 +39,17 @@ function AddMember(member) {
     nagendra.add_member(member);
   }
   console.log(nagendra);
+=======
+    
+      let members = Object.keys(nagendra);
+      if(members.includes(member)){
+          console.log("Member already present");
+      }else{
+        nagendra.add_member(member);
+        
+      }
+    console.log(nagendra)
+>>>>>>> 82fa8c0f379960c649372e8039c146c87abdd37c
 }
 
 function AddExpenses(member, expense) {
@@ -56,6 +72,7 @@ function split() {
     if (Members_expenses[i] > 0) {
       more_expense_person = members[i];
     }
+<<<<<<< HEAD
   }
 
   for (let i = 0; i < Members_expenses.length; i++) {
@@ -67,6 +84,11 @@ function split() {
       console.log(members[i] + " owes " + Members_expenses[i]);
     }
   }
+=======
+   }
+  
+
+>>>>>>> 82fa8c0f379960c649372e8039c146c87abdd37c
 }
 
 function main() {
